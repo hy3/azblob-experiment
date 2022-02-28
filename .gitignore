@@ -49,3 +49,6 @@ Temporary Items
 
 # distribution dir
 /dist
+
+# direnv
+.envrc
