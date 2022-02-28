@@ -11,9 +11,9 @@ help:  ## show this help
 ########################################
 
 .PHONY: build
-build: build/upload ## build all commands
+build: build/upload build/download ## build all commands
 
-build/upload: build/%: FORCE
+build/upload build/download: build/%: FORCE
 	go build -o ${DIST}/$* ${RACE} ${TAGS} ./cmd/$*
 
 FORCE: # dummy target
